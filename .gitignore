@@ -1,32 +1,43 @@
-# Prerequisites
-*.d
+#include <iostream>
+#include <cstring>
+#include <fstream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+using namespace std;
+fstream h("E:\hung59.txt");
 
-# Precompiled Headers
-*.gch
-*.pch
+class MangMotChieu
+{
+  protected:
+      int a[100];
+      int n, tam, i;
+  public:
+      void Nhap();
+      void NhapMang();
+      void XuatMang();
+};
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
 
-# Fortran module files
-*.mod
-*.smod
+// nhap mang mot chieu
+void MangMotChieu::NhapMang(int a[], int i)
+{
+  for(i=0; i<n; i++)
+  {
+    cout << "nhap a[%d]: " << i;
+    cin >> a[i];
+  }
+}
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+// xuat mang môt chieu
+void MangMotChieu::XuatMang(int a[], int i)
+{
+  cout << "Mang mot chieu: "";
+  for(i=0; i<n; i++)
+  {
+    cout << a[i];
+  }
+}
+
+
+int main()
+{}
