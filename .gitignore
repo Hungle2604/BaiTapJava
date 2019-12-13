@@ -21,8 +21,8 @@ class MangMotChieu
 void MangMotChieu::NhapMang(int a[], int i)
 {
   for(i=0; i<n; i++)
-  {
-    cout << "nhap a[%d]: " << i;
+  { 
+    cout << "Nhap vao phan tu a[" << i << "] : ";
     cin >> a[i];
   }
 }
