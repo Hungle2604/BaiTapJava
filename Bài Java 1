@@ -1,0 +1,11 @@
+public class MainBaiTap1 {
+    public static void main(String[] args) {
+        NhanVien NV = new NhanVien("Hung", 10,"khanh hoa", 100000, 100);
+        NhanVien NV1 = new NhanVien("Kiet ", 15,"khanh hoa", 110000, 110);
+        NhanVien NV2 = new NhanVien("phu", 20,"phu yen", 120000, 120);
+        System.out.println(NV.getThongTin());  
+        System.out.println(NV1.getThongTin()); 
+        System.out.println(NV2.getThongTin()); 
+        //day la main bt1
+    }
+}
